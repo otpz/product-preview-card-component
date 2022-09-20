@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    margin-top: 150px;
+    margin: auto;
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/**** CARD ****/
+.card{
+    margin: 5%;
+    display: flex;
+    width: 600px;
+    flex-wrap:wrap;
+    /* flex-direction: row; */
+}
+
+/*** LEFT-SIDE ***/
+.div-img{
+    border: 3px;
+    width: 50%;
+    flex-wrap:wrap;
+}
+
+.img{
+    width: 100%;
+    height: 100%; 
+    border-color: black;
+    object-fit:fill; 
+    border-radius: 8px 0 0 8px;
+}
+
+/*** RIGHT SIDE ***/
+.article{
+    width: 50%;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 8px 8px 0 ;
+    flex-wrap:wrap;
+}
+
+.div-article{
+    justify-content:flex-start;
+    padding: 8%;
+}
+
+.div-article h5{
+    padding: 5% 0;
+    color: #8b8b8b;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:5px;
+    font-size: 12px;
+}
+.div-article h1{
+    padding: 4% 0;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    line-height: 32px;
+
+}
+.div-article p{
+    padding: 5% 0;
+    color: #8b8b8b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height:21px;
+}
+.div-article h2{
+    padding: 5% 0;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+.div-article h2 span{
+    padding: 0 2%;
+    font-family: 'Fraunces', serif;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #8b8b8b;
+}
+.div-article .btn-pad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-article .btn{
+    padding: 7% 30%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.div-article .btn:hover{
+    background-color: hsl(160, 71%, 15%);
+    transition: 0.5s;
+}
+ @media only screen and (max-width: 700px) {
+    .container{
+        margin-top: 100px;
+    }
+
+    .div-img{
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+    }
+    .img{
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+        border-radius: 8px 8px 0 0;
+    }
+    .article{
+        width: 100%;
+        border-radius: 0 0 8px 8px ;
+    }
+    .card {
+      flex-direction: column;
+    }
+  } 
